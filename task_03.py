@@ -6,7 +6,7 @@ BASE = raw_input("Choose a base color: Seattle Gray or Manatee ")
 if BASE == "Seattle Gray":
     ACCENT = raw_input("Choose an accent color: Ceramic Glaze or Cumulus Nimbus ")
     if ACCENT== "Ceramic Glaze":
-        HIGHLIGH = raw_input("Choose a highlight color: Basically White or White ")
+        HIGHLIGHT = raw_input("Choose a highlight color: Basically White or White ")
     elif ACCENT == "Cumulus Nimbus":
         THIRDCHOICE = raw_input("Choose a highlight color: Off-White or Paper White ")
 
@@ -14,7 +14,7 @@ else:
     if BASE == "Manatee":
         ACCENT = raw_input("Choose an accent color: Platinum Mist or Spartan Sage ")
         if ACCENT == "Platinum Mist":
-            HIGHLIGH = raw_input("Choose a highlight color:Bone White or Just White ")
+            HIGHLIGHT = raw_input("Choose a highlight color:Bone White or Just White ")
         elif ACCENT == "Spartan Sage":
             HIGHLIGHT = raw_input("Choose an accent color: Fractal White or Not White ")
 
