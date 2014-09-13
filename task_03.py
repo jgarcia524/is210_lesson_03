@@ -8,7 +8,7 @@ if BASE == "Seattle Gray":
     if ACCENT== "Ceramic Glaze":
         HIGHLIGHT = raw_input("Choose a highlight color: Basically White or White ")
     elif ACCENT == "Cumulus Nimbus":
-        THIRDCHOICE = raw_input("Choose a highlight color: Off-White or Paper White ")
+        HIGHLIGHT = raw_input("Choose a highlight color: Off-White or Paper White ")
 
 else:
     if BASE == "Manatee":
