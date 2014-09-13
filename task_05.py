@@ -40,15 +40,20 @@ elif P >= 200000 and P <= 999999:
     elif t >= 21 and t <= 30:
         if Q == "y":
             r = "0.0466"
+        if Q == "n":
+            r = none
 elif P >= 1000000:
     if t >= 1 and t <= 15:
         if Q == "y":
             r = "0.0205"
+        if Q == "n":
+            r = none
     elif t >= 16 and t <= 20:
         if Q == "y":
             r = "0.0262"
+        if Q == "n":
+            r = none
             
 n = 12
-TOTAL = P*((1+(Decimal(r))/n))**(n*t)
-
-print int(TOTAL)
+FINAL = P*((1+(Decimal(r))/n))**(n*t)
+TOTAL = round(FINAL)
