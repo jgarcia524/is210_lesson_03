@@ -10,5 +10,5 @@ TIME = int(raw_input(
 
 SNOOZE = DAY == "sat" or DAY == "sun" or TIME <= 600
 
-if SNOOZE != True:
+if SNOOZE is False:
     print "Beep! Beep! Beep! Beep! Beep!"
