@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""Determining user's blood pressure status"""
 
 BLOODPRESSURE = int(raw_input("What is your blood pressure?" ))
 
@@ -15,5 +16,5 @@ elif BLOODPRESSURE >= 160:
     BP_STATUS = "Emergency"
 
 
-Status = "Your blood pressure status is {}."
-print Status.format(BP_STATUS)
+STATUS = "Your blood pressure status is {}."
+print STATUS.format(BP_STATUS)
