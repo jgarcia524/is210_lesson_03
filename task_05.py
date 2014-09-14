@@ -11,7 +11,7 @@ q = Qual.lower()
 Q = q[0]
 r = None
 
-if P <= 199999:
+if P >=0 and P <= 199999:
     if t >= 1 and t <= 15:
         if Q == "y":
             r = "0.0363"
