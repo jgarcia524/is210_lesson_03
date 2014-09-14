@@ -56,4 +56,13 @@ else:
     FINAL = P*((1+(Decimal(R))/N))**(N*T)
     TOT = round(FINAL)
     TOTAL = int(TOT)
-print TOTAL
+
+DASHES = "-" * 78
+REPORT = """
+\n Loan Report for: {0} \n {1}
+    Principal: {6:>10}{2}
+    Duration: {3:>12}yrs
+    Pre-qualified?: {4:>9} \n
+    Total: {6:>14}{5}"""
+
+print REPORT.format(NAME,DASHES,P,T,QUAL,TOTAL,"$")
