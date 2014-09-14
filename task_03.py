@@ -7,7 +7,7 @@ BASE = raw_input("Choose a base color: Seattle Gray or Manatee ")
 if BASE == "Seattle Gray":
     ACCENT = raw_input(
         "Choose an accent color:Ceramic Glaze or Cumulus Nimbus ")
-    if ACCENT== "Ceramic Glaze":
+    if ACCENT == "Ceramic Glaze":
         HIGHLIGHT = raw_input(
             "Choose a highlight color: Basically White or White ")
     elif ACCENT == "Cumulus Nimbus":
@@ -27,4 +27,4 @@ else:
 
 SELECTION = ("Your color selections are: {0} for the base color,"
              " {1} for the accent color, and {2} for the highlight color.")
-print(SELECTION.format(BASE, ACCENT, HIGHLIGHT))
+print SELECTION.format(BASE, ACCENT, HIGHLIGHT)
