@@ -48,9 +48,11 @@ elif P >= 1000000:
     elif t >= 16 and t <= 20:
         if Q == "y":
             r = "0.0262"
-            
 n = 12
-FINAL = P*((1+(Decimal(r))/n))**(n*t)
-total = round(FINAL)
-TOTAL = int(total)
+if r == None:
+    TOTAL = None
+else:
+    FINAL = P*((1+(Decimal(r))/n))**(n*t)
+    total = round(FINAL)
+    TOTAL = int(total)
 print TOTAL
