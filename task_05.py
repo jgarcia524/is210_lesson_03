@@ -9,6 +9,7 @@ t = int(raw_input("For how many years is this loan being borrowed?"))
 Qual = raw_input("Are you prequalified for this loan?")
 q = Qual.lower()
 Q = q[0]
+r = None
 
 if P <= 199999:
     if t >= 1 and t <= 15:
@@ -26,8 +27,6 @@ if P <= 199999:
             r = "0.0577"
         elif Q == "n":
             r = "0.0639"
-    else:
-        r = None
 elif P >= 200000 and P <= 999999:
     if t >= 1 and t <= 15:
         if Q == "y":
@@ -42,24 +41,16 @@ elif P >= 200000 and P <= 999999:
     elif t >= 21 and t <= 30:
         if Q == "y":
             r = "0.0466"
-        if Q == "n":
-            r = None
-    else:
-        r = None
 elif P >= 1000000:
     if t >= 1 and t <= 15:
         if Q == "y":
             r = "0.0205"
-        if Q == "n":
-            r = None
     elif t >= 16 and t <= 20:
         if Q == "y":
             r = "0.0262"
-        if Q == "n":
-            r = None
-else:
-    r = None
             
 n = 12
 FINAL = P*((1+(Decimal(r))/n))**(n*t)
-TOTAL = round(FINAL)
+total = round(FINAL)
+TOTAL = int(total)
+print TOTAL
