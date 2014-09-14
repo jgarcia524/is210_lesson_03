@@ -65,4 +65,4 @@ REPORT = """
     Pre-qualified?: {4:>9} \n
     Total: {6:>14}{5}"""
 
-print REPORT.format(NAME,DASHES,P,T,QUAL,TOTAL,"$")
+print REPORT.format(NAME, DASHES, P, T, QUAL, TOTAL, "$")
