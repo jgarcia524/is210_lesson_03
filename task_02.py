@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Determining user's blood pressure status"""
 
-BLOODPRESSURE = int(raw_input("What is your blood pressure?" ))
+BLOODPRESSURE = int(raw_input("What is your blood pressure?"))
 
 if BLOODPRESSURE <= 89:
     BP_STATUS = "Low"
