@@ -4,14 +4,15 @@
 
 from decimal import Decimal
 NAME = raw_input("What is your name?")
-P = int(raw_input("What is the amount of your principal (the amount being borrowed)?"))
+P = int(raw_input(
+    "What is the amount of your principal (the amount being borrowed)?"))
 T = int(raw_input("For how many years is this loan being borrowed?"))
 QUAL = raw_input("Are you prequalified for this loan?")
 QU = QUAL.lower()
 Q = QU[0]
 R = None
 
-if P >=0 and P <= 199999:
+if P >= 0 and P <= 199999:
     if T >= 1 and T <= 15:
         if Q == "y":
             R = "0.0363"
